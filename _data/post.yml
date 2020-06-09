@@ -3,3 +3,5 @@
   start: 09 Jun
   end: 16 Jun
   des: This is a test string which will fill up the square up to 50%
+
+git remote add origin2 github.com/cydestiny/foodschedule.git
