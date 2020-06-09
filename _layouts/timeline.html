@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>
+                Posts
+            </th>
+        {% for each in site.data.days %}
+            {%if each.day != 'placeholder' %}
+                <th> 
+                    {{ each.day }} 
+                </th>
+            {% endif %}
+        {% endfor %}
+        </tr>
+               
+       
+        {% assign count = 0 %}
+        {% for each in site.data.post %}
+            <tr>
+                <td> {{ each.des }} </td>
+                {% for day in site.data.days offset:1 %}
+                    {% if each.start != day.day %}
+                        <td> </td>
+                        {% assign count = count | plus:1 %}
+                    {% else %}
+                        {% assign count = count | plus:1 %}
+                        <td id=fill> </td>
+                        {% break %}
+                    {% endif%}
+                {% endfor %}
+
+                {% for day in site.data.days offset:count%}
+                    {% if each.end != day.day %}
+                        {% assign count = count | plus:1 %}
+                        <td id=fill> </td>
+                    {% else %}
+                        {% assign count = count | plus:1 %}
+                        <td id=fill> </td>
+                        {% break %}
+                    {% endif%}
+                {% endfor %}
+
+                {% for day in site.data.days offset:count%}
+                        <td> </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        
+    </table>
+</body>
+
+</html>
