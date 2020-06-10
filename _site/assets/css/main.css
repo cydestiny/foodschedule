@@ -1,6 +1,11 @@
+table{
+    width: 100%;
+}
+
 table, th, td, tr {
     border: 1px solid black;
     border-collapse: collapse;
+   
 }
 
 td {
@@ -10,6 +15,7 @@ td {
 
 #fill {
     background-color: rgb(201, 76, 76);
+    column-width: 10%;
 }
 
 #nofill {
@@ -19,4 +25,5 @@ td {
 #post {
     column-width: 40%;
     word-wrap: normal;
+    text-align: center;
 }
