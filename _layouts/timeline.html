@@ -33,7 +33,7 @@
             {% assign count = 2 %}
             <tr>
                 <td id=post> {{ each.post }} </td>
-                <td id=post> {{ each.des }} </td>
+                <td id=post> {{ each.desc }} </td>
                 {% for day in site.data.days offset:2 %}
                     {% if each.start != day.day %}
                         <td id=nofill> </td>
