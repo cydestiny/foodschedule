@@ -86,7 +86,7 @@ title: Update Spreadsheet
             var github = new Github({token: $oAuthToken,auth: "oauth"});
             var repo = github.getRepo($org,$repo);
 
-            $writepath = '_data/' + post + '.yml';
+            $writepath = '_data/' + 'post' + '.yaml';
 
             repo.write($branch,$writepath, $yaml_dump, 'Save', function(err) { });
             console.log("writing 1:" + $writepath);
