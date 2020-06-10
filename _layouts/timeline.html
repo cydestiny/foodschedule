@@ -9,21 +9,26 @@
     <table>
         <tr>
             <th>
-                Posts
+                Name
+            </th>
+            <th>
+                Offer
             </th>
         {% for each in site.data.days %}
-            {%if each.day != 'placeholder' %}
+            {%if each.day != 'placeholder' || each.day != 'placeholder' %}
                 <th> 
                     {{ each.day }} 
                 </th>
-            {% endif %}
+                            {% endif %}
         {% endfor %}
         </tr>
                
        
-        {% assign count = 1 %}
+        
         {% for each in site.data.post %}
+            {% assign count = 1 %}
             <tr>
+                <td id=post> {{ each.post }} </td>
                 <td id=post> {{ each.des }} </td>
                 {% for day in site.data.days offset:1 %}
                     {% if each.start != day.day %}
