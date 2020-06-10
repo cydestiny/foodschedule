@@ -4,10 +4,19 @@ table, th, td, tr {
 }
 
 td {
-    height: 20px;
-    width: 10%px;
+    height: 300px;
+
 }
 
 #fill {
     background-color: rgb(201, 76, 76);
+}
+
+#nofill {
+    column-width: 10%;
+}
+
+#post {
+    column-width: 40%;
+    word-wrap: normal;
 }

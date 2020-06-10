@@ -21,13 +21,13 @@
         </tr>
                
        
-        {% assign count = 0 %}
+        {% assign count = 1 %}
         {% for each in site.data.post %}
             <tr>
-                <td> {{ each.des }} </td>
+                <td id=post> {{ each.des }} </td>
                 {% for day in site.data.days offset:1 %}
                     {% if each.start != day.day %}
-                        <td> </td>
+                        <td id=nofill> </td>
                         {% assign count = count | plus:1 %}
                     {% else %}
                         {% assign count = count | plus:1 %}
