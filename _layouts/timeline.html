@@ -30,7 +30,7 @@
         {% for each in site.data.post %}
             {% assign count = 2 %}
             <tr>
-                <td id=post> {{ each.post }} </td>
+                <td id=post> <p> {{ each.post }} </p> <p><a href=" {{ each.link }}">link<a> </p></td>
                 <td id=post> {{ each.desc }} </td>
                 {% for day in site.data.days offset:2 %}
                     {% if each.start != day.day %}
