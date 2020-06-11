@@ -10,38 +10,35 @@
      {{ content }}
    </main>
 
-    <table role="table">
-     <thead role="rowgroup">
+    <table>
         <tr>
-            <th role="columnheader">
+            <th>
                 Name
-            </th role="columnheader">
-            <th role="columnheader">
+            </th>
+            <th>
                 Offer
-            </th role="columnheader">
+            </th>
         {% for each in site.data.days %}
             {%if each.day != 'placeholder' and each.day != 'placeholder2' %}
-                <th role="columnheader"> 
+                <th> 
                     {{ each.day }} 
-                </th role="columnheader">
+                </th>
                             {% endif %}
         {% endfor %}
-        </tr>
-    </thead>    
-
-      <tbody role="rowgroup">
+        </tr>    
+               
         {% for each in site.data.post %}
             {% assign count = 2 %}
-            <tr role="row">
-                <td role="cell"> {{ each.post }} </td>
-                <td role="cell"> {{ each.desc }} </td>
+            <tr>
+                <td id=post> {{ each.post }} </td>
+                <td id=post> {{ each.desc }} </td>
                 {% for day in site.data.days offset:2 %}
                     {% if each.start != day.day %}
-                        <td role="cell"> </td>
+                        <td id=nofill> </td>
                         {% assign count = count | plus:1 %}
                     {% else %}
                         {% assign count = count | plus:1 %}
-                        <td role="cell"> </td>
+                        <td id=fill> </td>
                         {% break %}
                     {% endif%}
                 {% endfor %}
@@ -49,10 +46,10 @@
                 {% for day in site.data.days offset:count%}
                     {% if each.end != day.day %}
                         {% assign count = count | plus:1 %}
-                        <td role="cell"> </td>
+                        <td id=fill> </td>
                     {% else %}
                         {% assign count = count | plus:1 %}
-                        <td role="cell"> </td>
+                        <td id=fill> </td>
                         {% break %}
                     {% endif%}
                 {% endfor %}
@@ -62,7 +59,7 @@
                 {% endfor %}
             </tr>
         {% endfor %}
-        </tbody>
+        
     </table>
 </body>
 
