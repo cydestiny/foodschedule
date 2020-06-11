@@ -1,8 +1,3 @@
-- post: Street Churros
-  link: 'https://www.facebook.com/VivacityMegamall/posts/2782312225202871'
-  start: 10 Jun
-  end: 31 Jun
-  desc: 2 cups of Green Tea Latte at RM9.90
 - post: Breadsman
   link: 'https://facebook.com/KGBurger/posts/2091733717618500'
   start: 11 Jun
@@ -11,8 +6,13 @@
 - post: McGregor English Pub
   link: 'https://www.facebook.com/McgEnglishPub/posts/610517106233685'
   start: 11 Jun
-  end: 31 Jun
+  end: 30 Jun
   desc: RM90 - 10 mugs (Mix & Match - Tiger/Guiness)
+- post: Street Churros
+  link: 'https://www.facebook.com/VivacityMegamall/posts/2782312225202871'
+  start: 11 Jun
+  end: 30 Jun
+  desc: 2 cups of Green Tea Latte at RM9.90
 - post: Mongolian Master
   link: 'https://www.facebook.com/MongolianMasterkuching/posts/1851183298352616'
   start: 11 Jun
