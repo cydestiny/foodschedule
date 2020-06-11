@@ -13,17 +13,17 @@
     <table role="table">
      <thead role="rowgroup">
         <tr>
-            <th>
+            <th role="columnheader">
                 Name
-            </th>
-            <th>
+            </th role="columnheader">
+            <th role="columnheader">
                 Offer
-            </th>
+            </th role="columnheader">
         {% for each in site.data.days %}
             {%if each.day != 'placeholder' and each.day != 'placeholder2' %}
-                <th> 
+                <th role="columnheader"> 
                     {{ each.day }} 
-                </th>
+                </th role="columnheader">
                             {% endif %}
         {% endfor %}
         </tr>
@@ -33,8 +33,8 @@
         {% for each in site.data.post %}
             {% assign count = 2 %}
             <tr role="row">
-                <td id=post> {{ each.post }} </td>
-                <td id=post> {{ each.desc }} </td>
+                <td role="cell"> {{ each.post }} </td>
+                <td role="cell"> {{ each.desc }} </td>
                 {% for day in site.data.days offset:2 %}
                     {% if each.start != day.day %}
                         <td role="cell"> </td>
