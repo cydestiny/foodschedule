@@ -10,7 +10,8 @@
      {{ content }}
    </main>
 
-    <table>
+    <table role="table">
+     <thead role="rowgroup">
         <tr>
             <th>
                 Name
@@ -26,21 +27,21 @@
                             {% endif %}
         {% endfor %}
         </tr>
-               
-       
-        
+    </thead>    
+
+      <tbody role="rowgroup">
         {% for each in site.data.post %}
             {% assign count = 2 %}
-            <tr>
+            <tr role="row">
                 <td id=post> {{ each.post }} </td>
                 <td id=post> {{ each.desc }} </td>
                 {% for day in site.data.days offset:2 %}
                     {% if each.start != day.day %}
-                        <td id=nofill> </td>
+                        <td role="cell"> </td>
                         {% assign count = count | plus:1 %}
                     {% else %}
                         {% assign count = count | plus:1 %}
-                        <td id=fill> </td>
+                        <td role="cell"> </td>
                         {% break %}
                     {% endif%}
                 {% endfor %}
@@ -48,10 +49,10 @@
                 {% for day in site.data.days offset:count%}
                     {% if each.end != day.day %}
                         {% assign count = count | plus:1 %}
-                        <td id=fill> </td>
+                        <td role="cell"> </td>
                     {% else %}
                         {% assign count = count | plus:1 %}
-                        <td id=fill> </td>
+                        <td role="cell"> </td>
                         {% break %}
                     {% endif%}
                 {% endfor %}
@@ -61,7 +62,7 @@
                 {% endfor %}
             </tr>
         {% endfor %}
-        
+        </tbody>
     </table>
 </body>
 
