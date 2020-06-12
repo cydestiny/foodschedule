@@ -12,7 +12,6 @@ th {
 
 table, th, td, tr {
     border: 1px solid black;
-    border-collapse: collapse;
    
 }
 
@@ -31,7 +30,7 @@ td {
 }
 
 #post {
-    column-width: 40%;
+    column-width: 30%;
     word-wrap: normal;
     text-align: center;
 }
@@ -50,9 +49,7 @@ body {
 }
 table {
   background: #012B39;
-  border-radius: 0.25em;
   border-collapse: collapse;
-  margin: 1em;
 }
 
 th {
