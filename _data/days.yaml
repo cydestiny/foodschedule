@@ -3,16 +3,16 @@
 - day: placeholder2
   dayinweek: ''
 - day: 8 Jun
-  dayinweek: Monday
+  dayinweek: MON
 - day: 9 Jun
-  dayinweek: Tuesday
+  dayinweek: TUE
 - day: 10 Jun
-  dayinweek: Wednesday
+  dayinweek: WED
 - day: 11 Jun
-  dayinweek: Thursday
+  dayinweek: THU
 - day: 12 Jun
-  dayinweek: Friday
+  dayinweek: FRI
 - day: 13 Jun
-  dayinweek: Saturday
+  dayinweek: SAT
 - day: 14 Jun
-  dayinweek: Sunday
+  dayinweek: SUN
