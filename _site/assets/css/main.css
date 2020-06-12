@@ -51,6 +51,7 @@ table {
   border-collapse: collapse;
   margin: 1em;
 }
+
 th {
   border-bottom: 1px solid #364043;
   color: #E2B842;
@@ -74,3 +75,6 @@ tbody tr:hover {
   background: #014055;
 }
 
+#days {
+    color: #fff;
+}
