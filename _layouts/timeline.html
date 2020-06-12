@@ -23,7 +23,8 @@
         {% for each in site.data.days %}
             {%if each.day != 'placeholder' and each.day != 'placeholder2' %}
                 <th> 
-                    {{ each.day }} 
+                    <p>{{ each.day }}</p>
+                    <p id=days>{{ each.dayinweek }} </p>
                 </th>
                             {% endif %}
         {% endfor %}
