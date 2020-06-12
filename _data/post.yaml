@@ -1,27 +1,20 @@
 - post: Breadsman
   link: 'https://www.facebook.com/BreadsmanKuching/posts/2613348068994923'
   start: 12 Jun
-  end: 12 Jun
+  end: 15 Jun
   desc: 'Father''s Day Special - 10% early bird discount for pre-order for '
-- post: Starbucks
-  link: 'https://www.facebook.com/StarbucksMalaysia/posts/10163773827785333'
-  start: 13 Jun
-  end: 14 Jun
-  desc: >-
-    Father's Day Special - Takeaway Hot Pot - 10% Discount (Free RM15 worth
-    add-ons if self collect)
 - post: Mongolian Master
-  link: 'https://www.facebook.com/MongolianMasterkuching/posts/1851183298352616'
+  link: 'https://m.facebook.com/MongolianMasterkuching/posts/1852440861560193'
   start: 12 Jun
-  end: 16 Jun
+  end: 30 Jun
+  desc: 30% OFF Dine- In Eat All You Can!
+- post: McGregor English Pub
+  link: 'https://www.facebook.com/McgEnglishPub/posts/610517106233685'
+  start: 12 Jun
+  end: 30 Jun
   desc: RM90 - 10 mugs (Mix & Match - Tiger/Guiness)
 - post: Burger King
   link: 'https://www.facebook.com/media/set/?set=a.3157806210943735&type=3'
-  start: 12 Jun
-  end: 17 Jun
-  desc: 2 cups of Green Tea Latte at RM9.90
-- post: McGregor English Pub
-  link: 'https://www.facebook.com/McgEnglishPub/posts/610517106233685'
   start: 12 Jun
   end: 30 Jun
   desc: Digital Coupons (Save like Crazy!)
@@ -29,11 +22,16 @@
   link: 'https://www.facebook.com/VivacityMegamall/posts/2782312225202871'
   start: 12 Jun
   end: 30 Jun
-  desc: '[Non-halal] RM288 Whole Roasted Suckling Pig'
+  desc: 2 cups of Green Tea Latte at RM9.90
+- post: Starbucks
+  link: 'https://www.facebook.com/StarbucksMalaysia/posts/10163773827785333'
+  start: 13 Jun
+  end: 14 Jun
+  desc: >-
+    10am-12pm - 30% off on selected beverage (Latte/ Americano/ Freshly Brewed
+    Coffee/ Cold Brew/ Freshly Brewed Tea/ Peach Cloud with Jelly)
 - post: Lok Thian
   link: 'https://www.facebook.com/LokThianRestaurant/'
   start: 15 Jun
   end: 30 Jun
-  desc: >-
-    10am-12pm - 30% off on selected beverage (Latte/ Americano/ Freshly Brewed
-    Coffee/ Cold Brew/ Freshly Brewed Tea/ Peach Cloud with Jelly)
+  desc: '[Non-halal] RM288 Whole Roasted Suckling Pig'
