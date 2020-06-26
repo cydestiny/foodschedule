@@ -16,7 +16,7 @@
 
     <div class="post">
         {% for each in site.data.post %}
-        <div>
+        <div style="padding:1em">
             <table>
                 <tr>
                     <th>
@@ -67,8 +67,8 @@
                     {% endfor %}
                 </tr>
                 <tr >
-                    <td colspan="9" style="height:1000px">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href={{ each.link }} &show_text=true&width=552&height=274&appId" width="100%" height="100%" style="border:none;overflow:none; background-color: #FFFFFF;" scrolling="yes" frameborder="0" allowTransparency="false" allow="encrypted-media"></iframe>
+                    <td colspan="9" style="height:750px">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href={{ each.link }} &show_text=true&width=552&height=750&appId" width="100%" height="100%" style="border:none;overflow:none; background-color: #FFFFFF;" scrolling="yes" frameborder="0" allowTransparency="false" allow="encrypted-media"></iframe>
                     </td>
                 </tr>
                 </table>
@@ -84,7 +84,9 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('.post').slick({
-               
+               arrows : false,
+               centerMode: true,	
+               infinite: false,
             });
     });
   </script>

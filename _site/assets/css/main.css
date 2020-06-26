@@ -1,3 +1,11 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
 table{
     width: 100%;
     height:100%;
@@ -9,7 +17,6 @@ table, th, td, tr {
 }
 
 tr {
-    min-height: 80px;
     height: 25%
 
 }
@@ -49,7 +56,7 @@ table {
 }
 
 tr {
-    min-height: 80px;
+    
 }
 
 th {
@@ -59,7 +66,6 @@ th {
   font-weight: 600;
   padding: 0.5em 1em;
   text-align: center;
-  min-height: 80px;
 }
 
 td {
