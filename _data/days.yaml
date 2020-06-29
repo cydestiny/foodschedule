@@ -4,15 +4,17 @@
   dayinweek: ''
 - day: 15 Jun
   dayinweek: MON
-- day: 16 Jun
+- day: 29 Jun
   dayinweek: TUE
-- day: 17 Jun
+- day: 30 Jun
   dayinweek: WED
-- day: 18 Jun
+- day: 1 Jul
   dayinweek: THU
-- day: 19 Jun
+- day: 2 Jul
   dayinweek: FRI
-- day: 20 Jun
+- day: 3 Jul
   dayinweek: SAT
-- day: 21 Jun
+- day: 4 Jul
   dayinweek: SUN
+- day: 5 Jul
+  dayinweek: ''
