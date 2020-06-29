@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style=" height:100%;"">
 
 <head>
     <meta charset="utf-8">
@@ -67,9 +67,9 @@
                 </tr>
                 {% assign count = 2 %}
                 <tr style="height:150px">
-                    <!-- <td id=post> <p> {{ each.post }} </p> <p><a href=" {{ each.link }}">link<a> </p></td> --!>
-                    <td id = post> {{each.post}} </td>
-                    <td id=post> {{ each.desc }} </td>
+                    <!-- <td id=post style="width:20%"> <p> {{ each.post }} </p> <p><a href=" {{ each.link }}">link<a> </p></td> --!>
+                    <td id = post style="width:10%"> {{each.post}} </td>
+                    <td id = post style="width:20%"> {{ each.desc }} </td>
                     {% for day in site.data.days offset:2 %}
                         {% if each.start != day.day %}
                             <td id=nofill> </td>
@@ -103,8 +103,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr style="height:250px">
-                </tr>
+ 
                 </table>
             </div>
             {% endfor %}
@@ -123,6 +122,9 @@
               centerMode: true,
               arrows: false,
               touchThreshold: 10000,
+              slidesToScroll: 2,
+              appendDots:  $('.post')
+
             });
     });
 
